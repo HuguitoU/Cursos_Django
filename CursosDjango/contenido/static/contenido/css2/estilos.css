@@ -1,0 +1,169 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 5%;
+    height: 100px;
+    background-color: #a9e5d1;
+}
+
+nav.logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .list{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 102%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .list li {
+    list-style: none;
+}
+
+nav .list a { 
+    display: block;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav .list a:hover { 
+    border-bottom: 4 px solid #005539;
+}
+
+nav img {
+    height: 100px;
+}
+
+.seccion{
+    background-color: #a9e5d1; /* Color verde pastel */
+    width: calc(100vw - 4cm);
+    height: calc(100vh - 4cm);
+    position: absolute;
+    top: 3cm;
+    left: 2cm;
+}
+
+.seccion_cursos{
+    background-color: #d6ece5; /* Color verde pastel */
+    width: calc(100vw - 4cm);
+    height: calc(100vh - 4cm);
+    position: absolute;
+    top: 3cm;
+    left: 2cm;
+}
+
+.seccion_form{
+    background-color: #a9e5d1; /* Color verde pastel */
+    width: calc(100vw - 8cm);
+    height: calc(100vh - 4cm);
+    position: absolute;
+    top: 3cm;
+    left: 4cm;
+}
+
+.titulo h2 { 
+    display: block;
+    text-transform: uppercase;
+    padding: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    text-align: right;
+}
+
+.descripcion{
+    display: block;
+    padding: 50px;
+    float: right;
+    width: 64%;
+    height: 10%;
+}
+
+.descripcion h4{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.logotipo {
+    width: 10%;
+    height: 10%;
+}
+
+.logotipo img {
+    height: 480px;
+}
+
+.cursos{
+    background-color: #a9e5d1;
+}
+
+.curso{
+    background-color: #88ccb5;
+    margin-bottom: 1cm;
+    height: 70px;
+    width: 800px;
+}
+
+.curso p{
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+}
+
+.cursos h2 { 
+    display: block;
+    text-transform: uppercase;
+    padding: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.lista{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    place-items: center;
+    display: grid;
+}
+
+.form_seleccion{
+    place-items: center;
+    display: grid;
+}
+
+.campos{
+    background-color: #88ccb5;
+}
+
+
+

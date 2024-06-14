@@ -1,15 +1,23 @@
 {% extends "contenido/barraNav.html" %}
 
 {% block contenido %}
-<h2>Curso</h2>
-    <p>Nombre: <input type = "text" name = "nombre" /></p>
-    <p>Correo electrónico: <input type = "text" name = "correo" /></p>
-    <p>Curso: <select>
-    <option>Base de datos</option>
-    <option>Programacion</option>
-    <option>IoT</opcion>
-    </select>
-    </p>
-    <p>Mensaje: </p><p><textarea cols = "50" rows = "10"></textarea></p>
-    <p><input type = "button" name = "enviar" value = "Enviar" /></p>
+<section class = "seccion_form">
+    <form class = "form_seleccion">
+        <div class = "cursos">
+            <h2>Selecciona tu Curso</h2>
+        </div>
+        <div class = "campos">
+            <p>Nombre: <input type = "text" name = "nombre" /></p>
+            <p>Correo electrónico: <input type = "text" name = "correo" /></p>
+            <p>Curso: <select>
+            <option>Base de datos</option>
+            <option>Programacion</option>
+            <option>IoT</opcion>
+            </select>
+            </p>
+            <p>Mensaje: </p><p><textarea cols = "50" rows = "10"></textarea></p>
+        </div>
+        <p><input type = "button" name = "enviar" value = "Enviar" /></p>
+    </form>
+</section>
 {% endblock %}

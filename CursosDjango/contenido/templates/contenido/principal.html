@@ -1,6 +1,21 @@
 {% extends "contenido/barraNav.html" %}
 
 {% block contenido %}
-<h2>Bienvenido a nuestro portal</h2>
-<h4>Nuestro principal objetivo es enseñarte como usar python</h4>
+<section class = "seccion">
+    <div class = "logotipo">
+        {%load static%}
+        <img src ={%static 'contenido/img/logo.png'%}>
+    </div>
+    <div class = "titulo">
+    <h2>Bienvenido a nuestro portal</h2>
+    </div>
+    <div class = "descripcion">
+    <h4>¡Hola!, te damos la bienvenida a nuestro portal, aqui encontrarás cursos que puedes tomar para aprender
+        acerca de diferentes materias, puedes navegar a través de nuestras secciones para que veas entre los
+        cursos alguno que te agrade, solo tienes que contactarnos y estarás dentro. 
+        Somos Cursos Tic's, nuestro principal objetivo es motivarte a aprender y darte las herramientas para que 
+        aprendas cada día mas.
+    </h4>
+    </div>
+</section>
 {% endblock %}

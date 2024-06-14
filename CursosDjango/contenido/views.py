@@ -16,4 +16,7 @@ def contacto(request):
     return render(request, "contenido/formCurso.html")
 
 def navegacion(request):
+    return render(request, "contenido/navegacion.html")
+
+def nav(request):
     return render(request, "contenido/nav.html")

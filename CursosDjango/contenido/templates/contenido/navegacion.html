@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'contenido/css/estilos.css' %}">
+</head>
+<body>
+    <div class="navbar--container sticky">
+        <div class="navbar--title">
+            <h4>Cursos</h4>
+            <div class = "navbar--sections">
+              <a href = "/" class="navbar--icon">Inicio</a>
+              <a href = "cursos/" class="navbar--icon">Cursos</a>
+              <a href = "formulario/" class="navbar--icon">Contacto</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="one">
+            <h1>Bienvenido a nuestros cursos<span>cursos</span></h1>
+            <p class="light">Selecciona una opción en la barra de navegación para continuar.</p>
+        </section>
+    </div>
+</body>
+</html>
