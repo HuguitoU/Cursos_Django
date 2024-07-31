@@ -1,5 +1,9 @@
 {% extends "contenido/barraNav.html" %}
 
+{%block titulo%}
+Cursos disponibles
+{%endblock%}
+
 {% block contenido %}
 <section class = "seccion_cursos">
     <div class = "cursos">
@@ -7,13 +11,16 @@
     </div>
     <div class = "lista">
         <div class = "curso">
-            <p>Base de datos</p>
+            <h4>Base de datos</h4>
+            <p>Conocimientos de base de datos SQL o NoSQL, para el almacenamiento y gestión de base de datos.</p>
         </div>
         <div class = "curso" >
-            <p>Programación</p>
+            <h4>Programación</h4>
+            <p>Fundamentos básicos y técnicas para comenzar en el extenso mundo de la programación.</p>
         </div>
         <div class = "curso">
-            <p>IoT</p>
+            <h4>Internet de las Cosas</h4>
+            <p>Introducción al mundo del Internet de las Cosas, para conocer las herramientas que ahora controlan el mundo.</p>
         </div>
     </div>
 </section>

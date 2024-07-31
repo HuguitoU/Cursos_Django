@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <form method = "GET">
+            Nombre: 
+            <input type = "text" name = "nombre"/>
+            Carrera: 
+            <input type = "text" name = "carrera"/>
+            Profesor:
+            <input type = "text" name = "profesor"/>
+            <input type = "submit" value = "Enviar"/>
+        </form>
+        <h2>Nombre materia: {{nombre}}</h2>
+        <h2>Carrera: {{carrera}}</h2>
+        <h2>Profesor: {{profesor|safe}}</h2>
+    </body>
+</html>

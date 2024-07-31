@@ -20,3 +20,6 @@ def navegacion(request):
 
 def nav(request):
     return render(request, "contenido/nav.html")
+
+def formPrueba(request):
+    return render(request, "contenido/formPrueba.html")

@@ -1,0 +1,23 @@
+{% extends "contenido/barraNav.html" %}
+
+{%block titulo%}
+Cursos
+{%endblock%}
+
+{% block contenido %}
+<section class = "seccion_cursos">
+    <div class = "cursos">
+        <h2>Lista de Cursos</h2>
+    </div>
+    <div class = "lista">
+        {% for curso in cursos %}
+        <div class = "curso">
+            <img src = "{{curso.imagen.url}}" width = "250" height = "200">
+            <h4>{{curso.nombreCurso}}</h4>
+            <p>{{curso.matriculaCurso}}</p>
+            <p>Profesor: {{curso.maestro}}</p>
+        </div>
+        {%endfor%}
+    </div>
+</section>
+{% endblock %}

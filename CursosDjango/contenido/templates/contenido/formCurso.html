@@ -1,5 +1,9 @@
 {% extends "contenido/barraNav.html" %}
 
+{%block titulo%}
+Solicitud de curso
+{%endblock%}
+
 {% block contenido %}
 <section class = "seccion_form">
     <form class = "form_seleccion">
@@ -7,17 +11,22 @@
             <h2>Selecciona tu Curso</h2>
         </div>
         <div class = "campos">
-            <p>Nombre: <input type = "text" name = "nombre" /></p>
-            <p>Correo electrónico: <input type = "text" name = "correo" /></p>
-            <p>Curso: <select>
-            <option>Base de datos</option>
-            <option>Programacion</option>
-            <option>IoT</opcion>
+            <label for = "nombre">Nombre</label>
+            <input type = "text" name = "nombre" id = "nombre" placeholder = "Nombre"/>
+            <label for = "correo">Correo electrónico</label> 
+            <input type = "text" name = "correo" name = "correo" id = "correo" placeholder = "Correo"/>
+            <label for = "curso">Curso</label>
+            <select class = "select_option">
+                <option name = "option" selected disabled hidden>Seleccione una opción</option>
+                <option name = "option">Base de datos</option>
+                <option name = "option">Programacion</option>
+                <option name = "option">IoT</opcion>
             </select>
-            </p>
-            <p>Mensaje: </p><p><textarea cols = "50" rows = "10"></textarea></p>
+            <label for = "mensaje">Mensaje</label>
+            <textarea cols = "50" rows = "10" type = "text" name = "mensaje" name = "mensaje" id = "mensaje" placeholder = "Mensaje"></textarea>
+            <p><input type = "button" class = "btn" name = "enviar" value = "Enviar" /></p>
         </div>
-        <p><input type = "button" name = "enviar" value = "Enviar" /></p>
+        
     </form>
 </section>
 {% endblock %}
